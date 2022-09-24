@@ -3,8 +3,6 @@ var txtInput = document.querySelector("#txt-input");
 var output = document.querySelector(".output");
 
 function clickEventHandler() {
-  console.log("Clicked!!");
-  console.log("input", txtInput.value);
   translate(txtInput.value);
 }
 
@@ -18,7 +16,6 @@ function translate(inputText) {
       return response.json();
     })
     .then(function (json) {
-      console.log(json.contents.translated);
       output.innerHTML = json.contents.translated;
     });
 }
