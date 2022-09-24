@@ -1,31 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Banana Speaks</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <!-- <input class="input" />
-    <button class="translate-btn">Translate</button>
-    <h2> Translated</h2>
-    <div class="translated">
-       
-    </div> -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navigation">
+      <img class="navImg" src="./Images/banana.gif" />
+    </nav>
+    <div class="input">
+      <h1 class="heading">GO BANANAS</h1>
+      <textarea
+        class="textArea"
+        placeholder="Enter your text here to translate"
+        id="txt-input"
+      ></textarea>
+    </div>
 
-    <h1>Translator</h1>
-        
-    <textarea class="textArea" placeholder="Enter your text here to translate" id="txt-input"></textarea>
+    <div class="btn-wrapper">
+      <button class="btn-translate">Translate</button>
+    </div>
 
-    <button id="btn-translate">Translate</button>
-        
-    <div>Here's your translation👇</div>
-    <div class="output"></div>
-
-
+    <div>
+      <h1 class="heading2">Here's your translation👇</h1>
+      <div class="output"></div>
+    </div>
+    <footer class="footer">
+      <div class="footer-heading">About</div>
+      <div class="footer-container">
+        <div class="footer-content">
+          Are you a minions fan? Now you too can go all bananas and speak their
+          language! Yess the gibbrish they speak is an actual language. Enter
+          text in the above translator to convert it from English to Minions'
+          language and Go Bananas!
+        </div>
+      </div>
+    </footer>
 
     <script src="index.js"></script>
-</body>
+  </body>
 </html>
